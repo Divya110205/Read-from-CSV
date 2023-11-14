@@ -1,5 +1,5 @@
-# Read-from-CSV
-
+# EX 6: Read-from-CSV
+## DATE: 31.10.23
 ## AIM:
 
 To write a python program to read contents from a CSV file.
@@ -27,20 +27,19 @@ Using len(df.axes[]) print the toal no.of rows and columns with argument 0 for r
 
 ## PROGRAM:
 ```
-# Exp6- Read from CSV
-# Program Developed By: DIVYA.A
-# Register Number: 212222230034
+#Program to read contents from a CSV file.
+#Developed by: DIVYA.A
+#RegisterNumber: 212222230034
 import pandas as pd
-f=pd.read_csv('/content/Placement_Data.csv')
-print(f.head(10))
-print(f.tail())
-print('Row:',len(f.axes[0]))
-print('Col:',len(f.axes[1]))
+df = pd.read_csv("data.csv")
+print(df.head(10))
+print(df.tail())
+print("No.of Rows:",len(df.axes[0]))
+print("No.of Columns:",len(df.axes[1]))
 ```
 ## OUTPUT:
+![image](https://github.com/Divya110205/Read-from-CSV/assets/119404855/08221689-28f6-418b-bde8-c0fd8b8c5fe0)
 
-![Exp 6(1)](https://github.com/Divya110205/Read-from-CSV/assets/119404855/51af3c01-3ea2-452f-8cfc-265cae3c7805)
-![Exp 6(2)](https://github.com/Divya110205/Read-from-CSV/assets/119404855/2701a94e-4780-420f-91be-f14dcca110d7)
 
 ## RESULT:
 Thus the program is written to copy the contents from one file to another file.
